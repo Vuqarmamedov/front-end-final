@@ -7,7 +7,7 @@ $(document).ready(function () {
       });
 
 
-      $('#myCarousel').carousel("pause");
+      $('#Carousel').carousel("pause");
 
       
       count=0;
@@ -29,7 +29,31 @@ $(document).ready(function () {
                   $(".navbar").removeClass("fixed");
             }
       })
-
+      
+      $("#icon-bar").click(function(event) {
+            $(".nav-xs").animate({
+                  left: "0px"},
+                  500, function() {
+                  /* stuff to do after animation is complete */
+            });
+      });
+      $("#close-icon").click(function(event) {
+            $(".nav-xs").animate({
+                  left: "-100%"},
+                  500, function() {
+                  /* stuff to do after animation is complete */
+            });
+      });
 })
+
+{
+      var carousel = new resposiveCarousel(400, "#services-slider", 1);
+}
+{
+      var manuslider = new resposiveCarousel(200, "#paralax", 1, true)
+}
+{
+      var customeslider = new resposiveCarousel(400, "#customers", 1, true);
+}
 
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Project</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,9 +12,10 @@
 </head>
 <body>
 
+
 <div class="container-fluid">
   <div id="header">
-    <div class="container-fluid">
+    <div class="container-fluid hidden-xs hidden-sm">
       <div class="top-nav">
         <div class="container">
          <div class="row">
@@ -66,7 +68,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="middle-nav">
+      <div class="middle-nav hidden-xs hidden-sm">
         <div class="row">
           <div class="col-md-2">
             <img class="img-responsive" src="img/logo.png" alt="">
@@ -119,10 +121,10 @@
           </div>
         </div>
       </div>
-      <div class="navbar">
+      <div class="navbar hidden-xs ">
         <div class="row">
-          <div class="col-md-10">
-                        <ul>
+          <div class="col-md-10 col-sm-12">
+            <ul>
                             <li>
                                 <a href="">Home</a>
                                 <span>
@@ -300,9 +302,9 @@
                             <li>
                                 <a href="">Contacts</a>
                             </li>
-                        </ul>
+            </ul>
           </div>
-          <div class="col-md-1 col-md-offset-1 text-right">
+          <div class="col-md-1 col-md-offset-1 text-right hidden-sm">
             <ul>
               <li>
                 <a href="">
@@ -313,6 +315,32 @@
           </div>
         </div>
       </div>
+      <nav id="navbar" class=" visible-xs hidden-lg hidden-md hidden-sm">
+             <div class="container">
+               <div class="row">
+                 <div class="col-md-3">
+                   <i class="fa fa-bars" aria-hidden="true" id="icon-bar"></i>
+                   <div class="nav-xs">
+                    <i class="fa fa-times" aria-hidden="true" id="close-icon"></i>
+                     <nav class="nav-bar">
+                        <div class="container-fluid">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="">Elements</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contacts</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                   </div>
+                 </div>
+               </div>
+             </div>
+      </nav>
     </div>
   </div>
 </div>  
@@ -409,91 +437,264 @@
   </div>
 </div>
 
-<div id="slider_2">
-     <div class="container">
-
+<section id="services-slider">
+      <div class="slider">
         <div class="slide">
-            <div class="row">
-                <div class="col-md-3 col-xs-12 item">
-                    <div class="innerItem">
-                        <img src="img/home-1.jpg" alt="">
-                        <a href="">Ice Maker Repair</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 item">
-                    <div class="innerItem">
-                        <img src="img/home-2.jpg" alt="">
-                        <a href="">Stove Repair</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 item">
-                    <div class="innerItem">
-                        <img src="img/home-3.jpg" alt="">
-                        <a href="">Microwave Repair</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 item">
-                    <div class="innerItem">
-                        <img src="img/home-4.jpg" alt="">
-                        <a href="">Washer Repair</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-12 item">
-                    <div class="innerItem">
-                        <img src="img/home-5.jpg" alt="">
-                        <a href="">Refrigerator Repair</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-xs-6 item">
-                    <div class="innerItem">
-                        <img src="img/home-6.jpg" alt="">
-                        <a href="">Range Hood Repair</a>
-                    </div>
-                </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-1.jpg">
+              <div class="border"></div>
+              <h3>Ice Maker Repair</h3>
             </div>
-        </div>
-        <div class="btns">
-            <div class="container">
-                <div class="row">
-                    <div class="prev">
-                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                    </div>
-                    <div class="next">
-                        <i class="fa fa-chevron-right"   aria-hidden="true"></i>
-                    </div>
-                    
-                </div>
+          </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-2.jpg">
+              <div class="border"></div>
+              <h3>Stove Repair</h3>
             </div>
-        </div>
-        <div class="button text-center">
-          <div class="row">
-            <div class="col-md-12">
-              <a class="customButton" href="">VIEW ALL SERVICES</a>
+          </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-3.jpg">
+              <div class="border"></div>
+              <h3>Microva Repair</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-4.jpg">
+              <div class="border"></div>
+              <h3>Wosher Repair</h3>  
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-5.jpg">
+              <div class="border"></div>
+              <h3>Refrigerator Repair</h3>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-slide">
+              <img src="img/home-6.jpg">
+              <div class="border"></div>
+              <h3>Range Hood Repair</h3>
             </div>
           </div>
         </div>
+        <div class="buttons">
+          <button id="next"><i class="fa fa-chevron-right"></i></button>
+          <button id="prev"><i class="fa fa-chevron-left"></i></button>
+        </div>  
       </div>
-</div>
+      <button id="view-button">view all services</button>
+</section>
 
-<div class="container-fluid">
-  <div id="slder_3">
-    <div class="container">
+<section id="paralax">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <h4></h4>
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
+          <div class="paralax text-center">
+            <h1>Manufacturers</h1>
+            <div class="border"></div>
+              <div class="slider">
+                <div class="slide">
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-7.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-8.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-9.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-10.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-11.png">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="manu-item">
+                      <a href="#">
+                        <img src="img/home-7.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dots">
+                  
+                </div>
+              </div>
+
+
+
+            <div class="opacity-top"></div>
+            <div class="opacity-bottom"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+</section>
+
+<section id="customers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Happy Customer Testimonials</h1>
+          <div class="border"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider">
+            <div class="slide">
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-12.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Jeniffer west</h4>
+                      <h5>Housewife</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    I highly recommend this company. I had a washer break down and they had it back up and running within 30 minutes of service call. The service men were very professional and prompt. If you have appliance damages, give them a call, they will surely repair.
+                  </p>
+                </div>    
+              </div>
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-13.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Patrick Carlson</h4>
+                      <h5>Web Designer</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    Great service from this family-owned (and veteran-owned) company! They fixed my washer machine in a timely and professional manner. Highly recommend. Thanks, guys, for a good work!
+                  </p>
+                </div>    
+              </div>
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-14.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Christine Bryant</h4>
+                      <h5>Journalist</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    Thomas had a good knowledge of our LG refrigerator and easily identified why the ice maker wasn't working. He ordered the part and came back to change it out and it works perfectly now. Tom and Sam work tirelessly to make calling them a good experience.
+                  </p>
+                </div>    
+              </div>
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-15.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>William Wallace</h4>
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    I highly recommend this service center. The best service I have ever received from an appliance repair company. If needs, I will definitely use them again for our repair needs.
+                  </p>
+                </div>    
+              </div>
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-13.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>Patrick Carlson</h4>
+                      <h5>Web Designer</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    Great service from this family-owned (and veteran-owned) company! They fixed my washer machine in a timely and professional manner. Highly recommend. Thanks, guys, for a good work!
+                  </p>
+                </div>    
+              </div>
+              <div class="item">
+                <div class="custom-item">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img src="img/home-15.jpg" class="img-circle">
+                    </div>
+                    <div class="col-md-10">
+                      <h4>William Wallace</h4>
+                      <h5>Manager</h5>
+                    </div>
+                  </div>
+                  <div class="border-item">
+                    <div class="rotate"></div>
+                  </div>
+                  <p>
+                    I highly recommend this service center. The best service I have ever received from an appliance repair company. If needs, I will definitely use them again for our repair needs.
+                  </p>
+                </div>    
+              </div>
+            </div>
+            <div class="dots">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section> 
 
 <div class="container-fluid">
   <div class="blog">
@@ -660,7 +861,7 @@
         <div id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
                         <div class="logo">
                             <img src="img/logo.png" class="img-responsive" alt="">
                         </div>
@@ -699,11 +900,11 @@
                     </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="col-md-3 col-md-offset-1 col-sm-5 col-xs-5">
                         <h3>Newsletter</h3>
                         <p>Keep up with the latest news, special offers and other discount information. Enter your e-mail and subscribe to our newsletter.</p>
                     </div>
-                    <div class="col-md-5 col-md-offset-1">
+                    <div class="col-md-5 col-md-offset-1 col-sm-5 col-xs-5">
                         <h3>Contact Us</h3>
 
                         <div class="left">
@@ -764,6 +965,9 @@
             </div>
         </div>
 </div>
+
+
+  <script src=""></script>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -774,7 +978,8 @@
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous">	
   </script>
-      <script src="js/script.js"></script>
+  <script src="js/plugin.js"></script>
+  <script src="js/script.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	</script>
 
